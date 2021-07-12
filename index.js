@@ -21,17 +21,29 @@ function askQuestions(ques, ans){
  }
  
 
- var questions = [{
-   question : "What's My full Name? ",
-   answer : "Piyush Ahir"
- }, {
-   question : "Where do I live? ",
-   answer : "Neemuch"
- }, {
-   question : "Who is my best friend? ",
-   answer : "Shoaib"
- }, {
-   question : "Which phone I am using? ",
-   answer : "MI A3"
- }];
+var questions = [{
+  question : "What's My full Name? ",
+  answer : "Piyush Ahir"
+}, {
+  question : "Where do I live? ",
+  answer : "Neemuch"
+}, {
+  question : "Who is my best friend? ",
+  answer : "Shoaib"
+}, {
+  question : "Which phone I am using? ",
+  answer : "MI A3"
+}];
  
+for(var i=0; i<questions.length; i++){
+   var q = questions[i];
+   askQuestions(q.question, q.answer);
+ }
+ 
+console.log(fColor("Yay! You scored : " + score));
+console.log(breakColor("-------------------"));
+ 
+checkHighScore();
+ 
+console.log("Thanks for playing, Have a nice day...");
+console.log(breakColor("-------------------"));
