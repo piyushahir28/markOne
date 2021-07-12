@@ -20,3 +20,18 @@ function askQuestions(ques, ans){
    console.log(breakColor("-------------------"));
  }
  
+
+ var questions = [{
+   question : "What's My full Name? ",
+   answer : "Piyush Ahir"
+ }, {
+   question : "Where do I live? ",
+   answer : "Neemuch"
+ }, {
+   question : "Who is my best friend? ",
+   answer : "Shoaib"
+ }, {
+   question : "Which phone I am using? ",
+   answer : "MI A3"
+ }];
+ 
