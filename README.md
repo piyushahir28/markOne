@@ -1,7 +1,7 @@
 <h1 align="center">CLI App created using JavaScript</h1>
 
 <p>
-This is a CLI app, basically a quiz named <strong>How well you know Piyush Ahir.</strong> I created this while I am learning JavaScript for the first time.
+This is a CLI app, basically a quiz named <strong>How well do you know Piyush Ahir.</strong> I created this while I am learning JavaScript for the first time.
 </p>
 
 #### Packages Used
