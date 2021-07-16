@@ -1,13 +1,17 @@
-//How well you know me?
+//Quiz -- How well do you know me?
+const { blue } = require('chalk');
 const chalk = require('chalk');
 var read = require("readline-sync");
-const sColor = chalk.bgHex('#FEF2F2').hex('#1E3A8A');
-const fColor = chalk.bgHex('#FEF2F2').hex('#5B21B6');
-const breakColor = chalk.hex('#F9A8D4');
 
-var userName = read.question("What's your name? ");
-console.log("Welcome, "+userName+" to Do You Know Piyush? ");
-console.log(breakColor("-------------------"));
+var rightAns = chalk.greenBright;
+var wrongAns = chalk.redBright;
+var sColor = chalk.yellowBright;
+var hColor = chalk.hex('#DEADED');
+
+console.log(hColor("Let's see how well you know PIYUSH ❤️ \n"));
+var userName = read.question("Namaste \nPlease enter your name? ");
+console.log(hColor("\nWelcome, "+userName+", to Do You Know Piyush? "));
+console.log(chalk.black.bold.bgWhite("\nNOTE: For each correct answer you will get 1 point.\n"));
 
 var highScores = [{
   name : "Yuvraj",
@@ -22,8 +26,8 @@ var score = 0;
 function checkHighScore(){
   for(var i=0; i<highScores.length; i++){
     if(score>highScores[i].scored){
-      console.log("Yay! You beat the high scorer, please send me a screenshot of this so that I can update the list. ");
-      console.log(breakColor("-------------------"));
+      console.log(chalk.bold.blueBright("\nYay! You beat the high scorer, please send me a screenshot of this so that I can update the list.\n"));
+      console.log("-------------------");
       break;
     }
   }
@@ -31,28 +35,28 @@ function checkHighScore(){
 
 function askQuestions(ques, ans){
   var userAns = read.question(ques);
-  if(userAns.toLowerCase()==ans.toLowerCase()){
-    console.log("You're right! " + userName);
+  if(userAns.toLowerCase() == ans.toLowerCase()){
+    console.log(rightAns("\nYay! You're right :)"));
     score++;
   }else{
-    console.log("Oops! You're wrong! " + userName);
+    console.log(wrongAns("\nOops! You're wrong :("));
   }
 
-  console.log(sColor("Score : "+score));
-  console.log(breakColor("-------------------"));
+  console.log(sColor("Current Score : "+score));
+  console.log("-------------------");
 }
 
 var questions = [{
-  question : "What's My full Name? ",
+  question : "\nWhat's My full Name?\n",
   answer : "Piyush Ahir"
 }, {
-  question : "Where do I live? ",
+  question : "\nWhere do I live?\n",
   answer : "Neemuch"
 }, {
-  question : "Who is my best friend? ",
+  question : "\nWho is my best friend?\n",
   answer : "Shoaib"
 }, {
-  question : "Which phone I am using? ",
+  question : "\nWhich phone I am using?\n",
   answer : "MI A3"
 }];
 
@@ -61,10 +65,10 @@ for(var i=0; i<questions.length; i++){
   askQuestions(q.question, q.answer);
 }
 
-console.log(fColor("Yay! You scored : " + score));
-console.log(breakColor("-------------------"));
+console.log(chalk.bold.magentaBright("Yay! Your total score is : " + score));
+console.log("-------------------");
 
 checkHighScore();
 
 console.log("Thanks for playing, Have a nice day...");
-console.log(breakColor("-------------------"));
+console.log("-------------------");
