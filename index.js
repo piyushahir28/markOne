@@ -1,4 +1,4 @@
-//Quiz -- How well do you know me?
+//Quiz -- How well do you know Piyush?
 const { blue } = require('chalk');
 const chalk = require('chalk');
 var read = require("readline-sync");
