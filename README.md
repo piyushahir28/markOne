@@ -4,14 +4,12 @@ This is a CLI app, basically a quiz named **How well you know Piyush Ahir** crea
 
 <br>
 
-![](./Images/readme1.png)
-
 ### Packages Used
 
 * readline-sync
 * chalk
 
-### Steps to run locally:
+### Get the latest version of the project:
 
 ```bash
 $ git clone https://github.com/piyushahir28/markOne.git
