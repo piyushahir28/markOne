@@ -1,17 +1,17 @@
-<h1 align="center">CLI App created using NodeJS</h1>
+<h1 align="center">NodeJS CLI App</h1>
 
-<p>
-This is a CLI app, basically a quiz named <strong>How well do you know Piyush Ahir.</strong> I created this while I am learning JavaScript for the first time.
-</p>
+This is a CLI app, basically a quiz named **How well you know Piyush Ahir** created using NodeJS on [repl](https://replit.com/@piyushahir28/markOne?embed=1&output=1).
+
+<br>
 
 ![](./Images/readme1.png)
 
-#### Packages Used
+### Packages Used
 
 * readline-sync
 * chalk
 
-### Steps:
+### Steps to run locally:
 
 ```bash
 $ git clone https://github.com/piyushahir28/markOne.git
