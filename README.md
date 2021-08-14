@@ -15,3 +15,4 @@ $ npm i readline-sync
 $ npm i readline-sync
 $ node index.js
 ```
+#### Link to the [CLI App](https://replit.com/@piyushahir28/markOne?embed=1&output=1)
