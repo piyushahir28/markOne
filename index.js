@@ -38,19 +38,19 @@ var questions = [{
     mcq: ['Piyush', 'Piyush Ahir', 'Piyush Rakesh'],
     answer: "1"
 }, {
-    question: "\nWhere do I live?\n",
+    question: "Where do I live?\n",
     mcq: ['Neemuch', 'Ujjain', 'Indore'],
     answer: "0"
 }, {
-    question: "\nWho is my best friend?\n",
+    question: "Who is my best friend?\n",
     mcq: ['Ram', 'Dheeraj', 'Shoaib'],
     answer: "2"
 }, {
-    question: "\nWhich phone I am using?\n",
+    question: "Which phone I am using?\n",
     mcq: ['iPhone 12 Mini', 'MI A3', 'Nokia 3310'],
     answer: "1"
 }, {
-    question: "\nWhat's my college name?\n",
+    question: "What's my college name?\n",
     mcq: ['MIT, Ujjain', 'MIT, Pune', 'MIT, USA'],
     answer: "0"
 }];
